@@ -6,6 +6,13 @@ body {
 .navbar {
   background-color: #1c1c1c;
 }
+
+.logo {
+  top: 10px;
+  width: 119px;
+  height: 52px;
+  margin-left: 147px;
+}
 .navheader {
   display: flex;
   align-items: center;
@@ -16,18 +23,17 @@ body {
   display: inline;
   margin-right: 43px;
   color: lightgray;
+  font-size: 14px;
   transition: transform 0.3s ease;
   text-decoration: none;
 }
 .navlinks a:hover {
   transform: scale(1.2);
-  font-size: 1.2em;
+  font-size: 1em;
   color: #fff;
   text-decoration: underline;
   text-decoration-color: #e27866;
 }
 .navlinks a:last-child {
   margin-right: 148px;
-}
-.logo {
 }
