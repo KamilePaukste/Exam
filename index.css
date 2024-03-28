@@ -24,6 +24,7 @@ body {
   font-size: 1.2em;
   color: #fff;
   text-decoration: underline;
+  text-decoration-color: #e27866;
 }
 .navlinks a:last-child {
   margin-right: 148px;
