@@ -1,4 +1,32 @@
+body {
+  font-family: "Montserrat";
+}
+
+/*  NAV BAR */
 .navbar {
   background-color: #1c1c1c;
-  line-height: 1;
+}
+.navheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.navlinks a {
+  display: inline;
+  margin-right: 43px;
+  color: lightgray;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+.navlinks a:hover {
+  transform: scale(1.2);
+  font-size: 1.2em;
+  color: #fff;
+  text-decoration: underline;
+}
+.navlinks a:last-child {
+  margin-right: 148px;
+}
+.logo {
 }
