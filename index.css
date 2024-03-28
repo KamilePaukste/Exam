@@ -37,3 +37,53 @@ body {
 .navlinks a:last-child {
   margin-right: 148px;
 }
+
+/* 2nd section */
+
+.herolayout {
+  position: relative;
+  display: flex;
+  height: 639px;
+  width: auto;
+  background-image: url(Assets/herophoto.png);
+}
+
+.herolayout::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.63);
+  z-index: 1;
+}
+.sheader {
+  top: 268px;
+  left: 147px;
+  width: 426px;
+  height: 87px;
+  font-size: 36px;
+}
+
+.herotext {
+  text-align: left;
+  margin-left: 150px;
+  z-index: 2;
+  color: #fff;
+}
+
+.logo2 {
+  width: 247px;
+  height: 108px;
+  margin-top: 75px;
+}
+.herop {
+  font-size: 16px;
+  width: 651px;
+}
+.firstform {
+  margin-right: 148px;
+  margin-top: 75px;
+  z-index: 2;
+}
