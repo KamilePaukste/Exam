@@ -1,5 +1,6 @@
 body {
   font-family: "Montserrat";
+  box-sizing: border-box;
 }
 
 /*  NAV BAR */
@@ -172,4 +173,44 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #369f7a;
+}
+
+/* Social media setion  */
+.SocialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1180px;
+  height: 105px;
+}
+
+.SocialMedia .text {
+  margin-right: 10px;
+  margin-left: 150px;
+  font-size: 14px;
+}
+
+.SocialMedia .text h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.SocialMedia .text p {
+  color: #86878b;
+  max-width: 394px;
+}
+
+.SocialMedia .mediaIcons {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  max-width: 560px;
+}
+
+.SocialMedia .mediaIcons .media-icon {
+  max-height: 10px;
+  margin-right: 102px;
 }
