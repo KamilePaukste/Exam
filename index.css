@@ -1,7 +1,8 @@
 body {
   font-family: "Montserrat";
   box-sizing: border-box;
-  width: 1400px;
+  max-width: 1400px;
+  width: 100%;
 }
 
 /*  NAV BAR */
@@ -286,7 +287,7 @@ input[type="submit"]:hover {
   background-color: #1c1c1c;
   display: flex;
   align-items: center;
-
+  height: 596px;
   color: #ffffff;
 }
 
@@ -341,3 +342,68 @@ input[type="submit"]:hover {
   margin-right: 20px;
 }
 /* sutaisyti IKONAS!!!!!!!! */
+
+/* 4 section */
+
+.WhyThisIsAwesome {
+  background-color: #ffffff;
+  color: #86878b;
+  height: 592px;
+}
+
+.Awesomeheader {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 65px;
+  margin-top: 98px;
+  text-align: center;
+  align-items: center;
+  color: #212121;
+}
+.Awesomeheader h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.Awesomeheader p {
+  font-size: 14px;
+  margin-top: 0px;
+}
+
+.Awesome {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.AwesomeAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  width: 30%;
+  max-width: 300px;
+  min-width: 200px;
+}
+
+.AwesomeAbout h2 {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 27px;
+}
+
+.AwesomeLogo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #e27866;
+  color: #e27866;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+}
