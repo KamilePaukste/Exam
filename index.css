@@ -1,6 +1,7 @@
 body {
   font-family: "Montserrat";
   box-sizing: border-box;
+  width: 1400px;
 }
 
 /*  NAV BAR */
@@ -215,6 +216,8 @@ input[type="submit"]:hover {
   margin-right: 102px;
 }
 
+/* TABS section */
+
 .menusection {
   position: relative;
   left: 0px;
@@ -276,3 +279,65 @@ input[type="submit"]:hover {
 .images img:nth-child(3) {
   grid-column: 1 / span 2;
 }
+
+/* 3rd section */
+
+.ThirdSection {
+  background-color: #1c1c1c;
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+.logosize {
+  width: 389px;
+  height: 169px;
+  margin-left: 210px;
+  align-items: center;
+  justify-content: center;
+}
+
+.Thirdsectiontext {
+  width: 451px;
+  margin-left: 167px;
+  margin-bottom: 69px;
+  flex-direction: column;
+}
+
+.FlexColumn {
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+}
+
+.FlexColumn h2 {
+  width: 314px;
+}
+.icon-title-group {
+  display: flex;
+  align-items: center;
+}
+.Thirdsectiontext > div {
+  display: flex;
+}
+
+.line {
+  color: #e27866;
+}
+.icons {
+  max-height: 30px;
+  max-width: 30px;
+}
+.IconsBackground {
+  background-color: #e27866;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+/* sutaisyti IKONAS!!!!!!!! */
