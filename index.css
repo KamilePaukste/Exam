@@ -1,13 +1,14 @@
 body {
   font-family: "Montserrat";
   box-sizing: border-box;
-  max-width: 1400px;
+  max-width: 87.5rem;
   width: 100%;
 }
 
 /*  NAV BAR */
 .navbar {
   background-color: #1c1c1c;
+  width: 87.5rem;
 }
 
 .logo {
@@ -48,6 +49,7 @@ body {
   display: flex;
   height: 639px;
   width: auto;
+  width: 87.5rem;
   background-image: url(Assets/herophoto.png);
 }
 
@@ -289,6 +291,7 @@ input[type="submit"]:hover {
   align-items: center;
   height: 596px;
   color: #ffffff;
+  width: 87.5rem;
 }
 
 .logosize {
@@ -349,6 +352,7 @@ input[type="submit"]:hover {
   background-color: #ffffff;
   color: #86878b;
   height: 592px;
+  max-width: 87.5rem;
 }
 
 .Awesomeheader {
@@ -375,7 +379,7 @@ input[type="submit"]:hover {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .AwesomeAbout {
@@ -405,5 +409,75 @@ input[type="submit"]:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 35px;
 }
+
+/* Pricing section */
+.pricing {
+  background-color: #6696e2;
+  max-width: 87.5rem;
+}
+
+.pricingheader {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+}
+.greenline {
+  color: #41d395;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.pricing-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  width: 343px; 
+  margin: 10px;
+}
+
+.card-header {
+  color: #fff;
+  background-color: #333333; 
+  text-align: center; 
+  padding: 20px 0; 
+  border-bottom: solid #41d395 6px;
+  margin-bottom: 0;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.currency {
+  font-size: 1.5rem; /
+}
+
+.amount {
+  font-size: 4rem; 
+}
+.Popular {
+  height: 40px;
+  text-align: center;
+  color: #fff;
+  background-color: #41d395;
+  margin-bottom: 0;
+}
+.card-body {
+  background-color: #ffffff; 
+  padding: 20px;
+  color: #86878B;
+
+  text-align: center; 
+}
+.card-body p {
+  margin-top: 10px; 
+  margin-bottom: 10px; 
+}
+
+/* SUTVARKYTI "POPULAR" */
