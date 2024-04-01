@@ -561,4 +561,122 @@ margin-top: 67px;
 }
 
 /* Footer */
+.Contact{
+display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: #E27866;
+  color: #FFFFFF;
+}
+.Contact h2 {
+  font-size: 36px;
+  margin-top: 70px;
+  margin-bottom:50px;
+}
 
+.form-container {
+    width: 390px;
+    margin-top: 27px;
+    margin-bottom: 50px;
+    background-color: #FFFFFF;
+    padding: 20px 65px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #1C1C1C;
+    margin: 10px 0;
+    padding: 10px 0;
+    background-color: transparent;
+    color: #1C1C1C;
+}
+.checkbox-group {
+    display: flex;
+    justify-content: flex-start; 
+    flex-wrap: wrap; 
+    margin: 10px 0;
+}
+
+
+.checkbox-group input[type="checkbox"] {
+   -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #41D395;
+    cursor: pointer;
+    display: inline-block
+   
+}
+
+
+.checkbox-group input[type="checkbox"]:checked {
+    background-color: #41D395;
+    
+    
+}
+
+.checkbox-group label {
+   display: flex;
+    align-items: center; 
+    cursor: pointer;
+    margin-right: 20px;
+    color: #1C1C1C;
+    font-size: 9px;
+    
+    
+}
+
+.submit-btn button {
+    width: 158px;
+    height: 48px;
+    background-color: #41D395;
+    border:#369f7a;
+    border-radius: 5px;
+    color: #FFFFFF;
+    margin-top: 40px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+::placeholder {
+    color: #D8D8D8;
+}
+
+
+.input-group input:focus {
+    outline: none;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 130px; 
+  background-color: #1C1C1C;
+  height: 124px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 107px; 
+ 
+  margin-right: 361px; 
+  
+  
+}
+
+footer p {
+  margin: 0; 
+  color: lightgrey;
+}
