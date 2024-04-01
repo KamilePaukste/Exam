@@ -481,3 +481,81 @@ input[type="submit"]:hover {
 }
 
 /* SUTVARKYTI "POPULAR" */
+
+/* REVIEWS */
+
+.Reviews {
+  background-color: #FFFFFF;
+}
+.ReviewsHeader {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+color: #1C1C1C;
+margin-top: 67px;
+}
+.ReviewsHeader p {
+  color: #6696E2;
+}
+.reviews-container {
+  display: flex;
+  justify-content: space-around; 
+}
+
+.review-card {
+  width: 300px; 
+  margin: 10px; 
+  display: flex;
+  flex-direction: column;
+}
+
+.review-bubble {
+  background-color: #6696E2; 
+  color: #ffffff; 
+  padding: 20px;
+  border-radius: 8px 8px 0 0; 
+}
+
+.review-footer {
+  display: flex;
+  align-items: center; 
+  background-color: #ffffff;
+  padding: 10px; 
+}
+
+.reviewer-img {
+  width: 70px; 
+  height: 70px;
+  border-radius: 50%; 
+  margin-right: 10px; 
+}
+
+.reviewer-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewer-name, .reviewer-title {
+  margin: 0; 
+}
+.review-nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.nav-dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: transparent;
+  border: 1px solid #E27866; 
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .nav-dot:hover {
+  background-color: #E27866;
+}
