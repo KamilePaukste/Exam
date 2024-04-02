@@ -35,11 +35,12 @@ function showSlides(n) {
 
 // /Tag section
 document.addEventListener("DOMContentLoaded", function () {
-  const spans = Array.from(document.querySelectorAll(".menu span"));
+  const buttons = Array.from(document.querySelectorAll(".menu button"));
 
-  const showSection = (clickedSpan) => {
+  const showSection = (clickedButton) => {
     let sectionId = "";
-    switch (clickedSpan.textContent.trim().toLowerCase()) {
+
+    switch (clickedButton.textContent.trim().toLowerCase()) {
       case "register":
         sectionId = "section-register";
         break;
@@ -62,8 +63,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   };
 
-  spans.forEach((span) => {
-    span.addEventListener("click", function () {
+  buttons.forEach((button) => {
+    button.addEventListener("click", function () {
       showSection(this);
     });
   });

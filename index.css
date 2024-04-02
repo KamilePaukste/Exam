@@ -1,7 +1,7 @@
 body {
   font-family: "Montserrat";
   box-sizing: border-box;
-  max-width: 87.5rem;
+  max-width: 100%;
   width: 100%;
   margin: 0;
 }
@@ -42,6 +42,19 @@ body {
 .navlinks a:last-child {
   margin-right: 148px;
 }
+
+@media screen and (max-width: 768px) {
+  .navheader {
+    flex-direction: column; 
+  }
+  .logo {
+    margin: 0 ; 
+  }
+  .navlinks {
+    display: none; 
+  }
+}
+
 
 /* 2nd section */
 
@@ -103,6 +116,28 @@ body {
   background-color: #e27866;
   border: none;
 }
+@media screen and (max-width: 768px) {
+  .herolayout {
+    flex-direction: column; 
+    height: auto; 
+  }
+  .sheader {
+    font-size: 24px; 
+    width: auto;
+    height: auto;
+  }
+  .logo2{
+    margin-top: 1rem;
+  }
+  .herotext {
+    margin: 20px; 
+  }
+  .herop {
+    font-size: 14px; 
+    width: auto; 
+  }
+}
+
 
 /* Form for free trial */
 .firstform {
@@ -209,6 +244,23 @@ input[type="submit"]:hover {
   background-color: #369f7a;
 }
 
+@media screen and (max-width: 768px) {
+  .firstform {
+    max-width: 60%; 
+    margin: 20px; 
+  }
+  .FormMiddle, .subscription {
+    width: calc(100% - 32px); 
+    padding-left: 20px; 
+    border:none;
+  }
+  .subscription {
+    border:none;
+    
+  }
+}
+
+
 /* Social media setion  */
 .SocialMedia {
   display: flex;
@@ -295,7 +347,7 @@ input[type="submit"]:hover {
 .menu {
   max-height: 342px;
 }
-.menu div {
+.menu button {
   width: 100px;
   height: 100px;
   background-color: #a37169;
@@ -304,12 +356,14 @@ input[type="submit"]:hover {
   justify-content: center;
   align-items: center;
   display: flex;
+  color: #FFFFFF;
+  border: none;
 }
 .menu span {
   transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
   display: inline-block;
 }
-.menu div:hover {
+.menu button:hover {
   background-color: #e27866;
 }
 
