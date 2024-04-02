@@ -3,12 +3,13 @@ body {
   box-sizing: border-box;
   max-width: 87.5rem;
   width: 100%;
+  margin: 0;
 }
 
 /*  NAV BAR */
 .navbar {
   background-color: #1c1c1c;
-  width: 87.5rem;
+  max-width: 87.5rem;
 }
 
 .logo {
@@ -49,7 +50,7 @@ body {
   display: flex;
   height: 639px;
   width: auto;
-  width: 87.5rem;
+  max-width: 87.5rem;;
   background-image: url(Assets/herophoto.png);
 }
 
@@ -132,11 +133,12 @@ body {
 }
 
 .FormMiddle {
-  width: 334px;
+  width: 336px;
   background-color: #fff;
   border: none;
   color: #1c1c1c;
   font-size: 16px;
+  margin: 0;
 }
 .FormMiddle div {
   padding-top: 20px;
@@ -153,18 +155,46 @@ body {
   border-bottom: 1px solid #d8d8d8;
 }
 
-/* CHECK BOX TO DO  */
+.checkbox-label {
+  display: inline-block;
+  padding-bottom: 38px;
+  padding-top: 10px;
+  align-items: center;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  
+  border: 2px solid #41D395;
+  
+} 
+
+input[type="radio"]:checked  {
+  background-color: #41D395;
+}
 
 .subscription {
+  
   color: #1c1c1c;
   background-color: #ffffff;
   border: none;
-  padding-top: 32px;
+  padding-top: 15px;
   display: inline block;
-  width: 334px;
+  width: 297px;
+  margin: 0;
+  padding-left: 51px;
 }
 
+
 input[type="submit"] {
+  
   width: 100%;
   padding: 15px;
   border: none;
@@ -186,7 +216,7 @@ input[type="submit"]:hover {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1180px;
+  max-width: 87.5rem;
   height: 105px;
 }
 
@@ -210,8 +240,10 @@ input[type="submit"]:hover {
 .SocialMedia .mediaIcons {
   display: flex;
   justify-content: start;
+  
   width: 100%;
   max-width: 560px;
+  padding-right: 50px;
 }
 
 .SocialMedia .mediaIcons .media-icon {
@@ -224,7 +256,7 @@ input[type="submit"]:hover {
 .menusection {
   position: relative;
   left: 0px;
-  width: 1400px;
+  max-width: 87.5rem;
   height: 595px;
   display: flex;
   justify-content: space-between;
@@ -259,10 +291,15 @@ input[type="submit"]:hover {
   height: 100px;
   background-color: #a37169;
   margin-bottom: 21px;
-  text-align: center;
   margin-left: 150px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
-
+.menu span {
+  transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+  display: inline-block;
+}
 .menu div:hover {
   background-color: #e27866;
 }
@@ -291,7 +328,7 @@ input[type="submit"]:hover {
   align-items: center;
   height: 596px;
   color: #ffffff;
-  width: 87.5rem;
+  max-width: 87.5rem;
 }
 
 .logosize {
@@ -331,9 +368,13 @@ input[type="submit"]:hover {
   color: #e27866;
 }
 .icons {
-  max-height: 30px;
-  max-width: 30px;
+  height: 50px; 
+  width: 50px; 
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
+
 .IconsBackground {
   background-color: #e27866;
   height: 50px;
@@ -344,7 +385,7 @@ input[type="submit"]:hover {
   align-items: center;
   margin-right: 20px;
 }
-/* sutaisyti IKONAS!!!!!!!! */
+
 
 /* 4 section */
 
@@ -415,6 +456,8 @@ input[type="submit"]:hover {
 .pricing {
   background-color: #6696e2;
   max-width: 87.5rem;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 
 .pricingheader {
@@ -423,6 +466,7 @@ input[type="submit"]:hover {
   text-align: center;
   align-items: center;
   color: #fff;
+  padding-bottom: 40px;
 }
 .greenline {
   color: #41d395;
@@ -432,20 +476,32 @@ input[type="submit"]:hover {
 .pricing-cards {
   display: flex;
   justify-content: space-around;
+  
 }
 
 .card {
   width: 343px; 
   margin: 10px;
+  padding-top: 40px;
+ 
 }
+.cardpopular{
+  width: 343px; 
+  margin: 10px;
+  padding-bottom: 40px;
+
+}
+
+
 
 .card-header {
   color: #fff;
   background-color: #333333; 
   text-align: center; 
-  padding: 20px 0; 
+  padding-top: 20px; 
   border-bottom: solid #41d395 6px;
   margin-bottom: 0;
+  
 }
 
 .price {
@@ -464,10 +520,13 @@ input[type="submit"]:hover {
 .Popular {
   height: 40px;
   text-align: center;
+  justify-content: center;
   color: #fff;
   background-color: #41d395;
-  margin-bottom: 0;
+  margin: 0; 
+  display: flex;
 }
+
 .card-body {
   background-color: #ffffff; 
   padding: 20px;
@@ -486,6 +545,7 @@ input[type="submit"]:hover {
 
 .Reviews {
   background-color: #FFFFFF;
+  max-width: 87.5rem;
 }
 .ReviewsHeader {
   display: flex;
@@ -542,6 +602,7 @@ margin-top: 67px;
 .review-nav {
   text-align: center;
   margin-top: 20px;
+  padding-bottom: 50px;
 }
 
 .nav-dot {

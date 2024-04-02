@@ -47,20 +47,20 @@
                 <input  type="text" name="surname" placeholder="Last Name" required><br>
                 <input  type="tel" name="phone" placeholder="Phone Number" required>
                 </div>
+                
               </fieldset>
               <fieldset class="subscription">
-                  <div><b>Type of Subscription</b></div>
-                  <div>
-                      <label>MONTHLY
-                        <input type="radio" checked="checked" name="radio">
-                        <span class="checkmark"></span>
-                      </label>
-                      <label">YEARLY
-                       <input type="radio" name="radio">
-                       <span class="checkmark"></span>
-                      </label>
-                  </div>
-                </fieldset>
+                <div class="Type"><b>Type of Subscription</b></div>
+                <div>
+                  <label class="checkbox-label">
+                    <input type="radio" checked="checked" name="radio"> MONTHLY
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="radio" name="radio"> YEARLY
+                  </label>
+                </div>
+              </fieldset>
+
                     <input type="submit" name="Submit" value="GET STARTED" ></input>
          </form>
         </div>
@@ -157,7 +157,7 @@
               </div>
               <div class="icon-title-group">
                   <div class="IconsBackground">
-                      <img class="icons" src="Assets/eye-regular.svg" alt="eye icon"/>
+                      <div class="icons"><i class="fa-solid fa-eye fa-lg" style="color: #ffffff;"></i></div>
                   </div>
                   <div>
                       <h3>Title</h3>
@@ -166,7 +166,7 @@
               </div>
               <div class="icon-title-group">
                   <div class="IconsBackground">
-                      <img class="icons" src="Assets/comment-regular.svg" alt="comment icon"/>
+                     <div class="icons"> <i class="fa-regular fa-comment fa-lg"></i></div>
                   </div>
                   <div>
                       <h3>Title</h3>
@@ -234,7 +234,7 @@
                     </div>
                   </div>
 
-                  <div class="card">
+                  <div class="cardpopular">
                     <div class="card-header">
                       <h2>Professional</h2>
                       <div class="price">
@@ -243,8 +243,6 @@
                       <p>Monthly Payment</p>
                        <div class="Popular"><p>OUR MOST POPULAR</p></div>
                     </div>
-
-                    
                     <div class="card-body">
                       <p>5 GB OF SPACE</p>
                       <p>50 GB OF BANDWIDTH</p>
