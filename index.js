@@ -1,3 +1,4 @@
+// /reviews
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -32,6 +33,7 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
+// /Tag section
 document.addEventListener("DOMContentLoaded", function () {
   const spans = Array.from(document.querySelectorAll(".menu span"));
 
@@ -63,6 +65,24 @@ document.addEventListener("DOMContentLoaded", function () {
   spans.forEach((span) => {
     span.addEventListener("click", function () {
       showSection(this);
+    });
+  });
+});
+
+// /Scroll
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".navlinks a").forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute("href").substring(1);
+      const targetSection = document.getElementById(targetId);
+
+      if (targetSection) {
+        targetSection.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
     });
   });
 });
