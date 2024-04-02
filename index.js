@@ -25,9 +25,44 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  // Show 3 slides for the current index
+
   for (i = (slideIndex - 1) * 3; i < slideIndex * 3 && i < slides.length; i++) {
     slides[i].style.display = "block";
   }
   dots[slideIndex - 1].className += " active";
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const spans = Array.from(document.querySelectorAll(".menu span"));
+
+  const showSection = (clickedSpan) => {
+    let sectionId = "";
+    switch (clickedSpan.textContent.trim().toLowerCase()) {
+      case "register":
+        sectionId = "section-register";
+        break;
+      case "apply":
+        sectionId = "section-apply";
+        break;
+      case "receive":
+        sectionId = "section-receive";
+        break;
+      default:
+        return;
+    }
+
+    document.querySelectorAll(".menusection").forEach((section) => {
+      if (section.id === sectionId) {
+        section.style.display = "flex";
+      } else {
+        section.style.display = "none";
+      }
+    });
+  };
+
+  spans.forEach((span) => {
+    span.addEventListener("click", function () {
+      showSection(this);
+    });
+  });
+});

@@ -263,6 +263,7 @@ input[type="submit"]:hover {
   align-items: flex-start;
   z-index: 1;
   background-image: url(Assets/christoffer-engstrom-503481-unsplash.png);
+  
 }
 /* .menusection::after {
   content: "";
@@ -279,6 +280,14 @@ input[type="submit"]:hover {
   margin-top: 127px;
   color: #fff;
 }
+.menusection {
+  display: none; 
+}
+
+.menusection:first-child {
+  display: flex; 
+}
+
 .menutext {
   margin-left: 54px;
   margin-right: 76px;
@@ -539,7 +548,6 @@ input[type="submit"]:hover {
   margin-bottom: 10px; 
 }
 
-/* SUTVARKYTI "POPULAR" */
 
 /* REVIEWS */
 
@@ -637,13 +645,13 @@ display: flex;
 }
 
 .form-container {
-    width: 390px;
-    margin-top: 27px;
-    margin-bottom: 50px;
-    background-color: #FFFFFF;
-    padding: 20px 65px;
-    box-sizing: border-box;
-    border-radius: 5px;
+ width: 390px;
+ margin-top: 27px;
+  margin-bottom: 50px;
+  background-color: #FFFFFF;
+  padding: 20px 65px;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
 
 .input-group input {
@@ -662,7 +670,6 @@ display: flex;
     margin: 10px 0;
 }
 
-
 .checkbox-group input[type="checkbox"] {
    -webkit-appearance: none;
     -moz-appearance: none;
@@ -673,15 +680,12 @@ display: flex;
     border-radius: 50%;
     border: 2px solid #41D395;
     cursor: pointer;
-    display: inline-block
-   
+    display: inline-block;  
 }
 
-
 .checkbox-group input[type="checkbox"]:checked {
-    background-color: #41D395;
-    
-    
+  background-color: #41D395;
+
 }
 
 .checkbox-group label {
@@ -690,9 +694,7 @@ display: flex;
     cursor: pointer;
     margin-right: 20px;
     color: #1C1C1C;
-    font-size: 9px;
-    
-    
+    font-size: 9px;    
 }
 
 .submit-btn button {
@@ -709,11 +711,9 @@ display: flex;
     margin-right: auto;
 }
 
-
 ::placeholder {
     color: #D8D8D8;
 }
-
 
 .input-group input:focus {
     outline: none;
@@ -731,10 +731,7 @@ footer {
 .social-icons {
   display: flex;
   gap: 107px; 
- 
   margin-right: 361px; 
-  
-  
 }
 
 footer p {
